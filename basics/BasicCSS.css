@@ -1,0 +1,16 @@
+h1 {
+    color: rgb(241, 207, 253);
+    background-color: rgb(74, 46, 175);
+}
+{color :rgb(223, 80, 99)}
+
+.turnred {
+    color: red;
+}
+#special  {
+   background-color: rgb(212, 93, 212);
+}
+a:hover {
+    color: green;
+    text-decoration: underline;
+}
