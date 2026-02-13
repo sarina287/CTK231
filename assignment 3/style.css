@@ -1,0 +1,27 @@
+h1 {
+    color: rgb(179, 47, 227);
+   
+}
+/* Make links red by default */
+a, a:link {
+    color: red;
+}
+/* Make links yellow on hover */
+a:hover {
+    color: yellow;
+}
+
+.orange {
+
+    background-color: rgb(255, 165, 0);
+}
+
+#specialID {
+    color: rgb(27, 80, 75);
+    background-color: rgb(144, 74, 144);
+}
+
+
+.spanstyle {
+    color: rgb(135, 4, 63);
+   
