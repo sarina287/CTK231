@@ -1,0 +1,29 @@
+nav ul{
+    list-style-type: none
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+
+    border: 1px solid black;
+    width: 200px;
+    margin-bottom: 20px;
+    background-color: lightblue; 
+    display: inline-block;
+    margin-right: 10px; 
+
+}
+
+nav li a {
+    display: block;
+    text-decoration: none;
+    color: rgb(231, 102, 102);
+    text-decoration: none;
+     padding: 20px;
+}
+
+nav li a:hover {
+  background-color: rosybrown;
+  
+}
