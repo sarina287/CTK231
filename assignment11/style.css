@@ -1,129 +1,64 @@
- body {
+
+body {
     margin: 0;
-     font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
 }
 
-
-}
 .header {
     background-color: #7ca35c;
-    color: black;
     padding: 25px;
-    font-size: 36px;
+    font-size: 32px;
+    border-radius: 0 0 15px 15px;
 }
 
-.container {
-    display: flex;
-}
-
-.sidebar {
-    width: 220px;
-    background-color: #e9e9e9;
-    padding-top: 20px;
-}
-
-.sidebar a {
-    display: block;
-    padding: 15px;
+.back-btn {
+    margin: 20px;
+    display: inline-block;
     text-decoration: none;
     color: black;
-    font-size: 18px;
-}
-
-.sidebar a:hover {
-    background-color: #d4d4d4;
-}
-
-.content {
-    flex: 1;
-    padding: 20px;
-}
-
-.top-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.top-section img {
-    width: 300px;
-    margin: 0 20px;
-}
-
-.divider {
-    height: 15px;
-    background-color: #7ca35c;
-    margin: 20px 0;
-}
-
-.bottom-section {
-    display: flex;
-}
-
-.bottom-section img {
-    width: 50%;
-    filter: grayscale(100%);
-}
-
-.text-block {
-    padding: 20px;
-    font-size: 14px;
-    line-height: 1.6;
-}
-.header {
-    background-color: #7ca35c;
-    padding: 25px;
-    font-size: 36px;
-    border-radius: 0 0 15px 15px; /* rounded bottom */
-}
-
-.sidebar {
-    border-radius: 10px;
-}
-
-/* Add hover animation to menu */
-.sidebar a {
-    transition: all 0.3s ease;
-}
-
-.sidebar a:hover {
-    background-color: #d4d4d4;
-    padding-left: 25px; /* smooth slide effect */
-}
-
-/* Add shadow to images */
-.top-section img,
-.bottom-section img {
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-/* Text box styling */
-.text-block {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-} 
-
-.socials {
-    margin-top: 20px;
-    font-size: 24px;
-}
-
-.socials i {
-    margin-right: 15px;
-    cursor: pointer;
+    font-weight: 500;
     transition: 0.3s;
 }
 
-.socials i:hover {
+.back-btn:hover {
     color: #7ca35c;
-    transform: scale(1.2);
-} 
-<div class="media">
-    <p>Background Music:</p>
-    <audio controls>
-        <source src="music.mp3" type="audio/mpeg">
-    </audio>
-</div>
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    padding: 30px;
+}
+
+.gallery a {
+    display: block;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+
+.gallery img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.07);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+@media (max-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}

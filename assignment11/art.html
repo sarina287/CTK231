@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Art Portfolio</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="art.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+</head>
+
+<body>
+
+<div class="header">My Art Portfolio</div>
+
+
+<div class="gallery">
+
+    <a href="art3.png" data-fancybox="gallery" data-caption="">
+        <img src="art3.png" alt="Art 1">
+    </a>
+
+    <a href="art4.jpg" data-fancybox="gallery" data-caption="">
+        <img src="art4.jpg" alt="Art 2">
+    </a>
+
+    <a href="art5.jpg" data-fancybox="gallery" data-caption="">
+        <img src="art5.jpg" alt="Art 3">
+    </a>
+
+</div>
+
+<script>
+Fancybox.bind("[data-fancybox='gallery']", {
+    Thumbs: {
+        autoStart: true
+    },
+    Toolbar: {
+        display: ["zoom", "slideshow", "fullscreen", "close"]
+    },
+    animated: true,
+});
+</script>
+
+</body>
+</html>
