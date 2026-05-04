@@ -1,0 +1,241 @@
+html{
+    background-image: url("background.png");
+    background-size: cover;
+}
+
+body {
+    background-color:  #dbddf2;
+    width:75vw;
+    border: black solid 10px;
+    border-radius: 15px;
+    font-family:'Gill Sans', Calibri, sans-serif;
+    margin: 6vw auto;
+    padding: 0;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: #68a260;
+}
+
+nav a {
+    margin: 10px;  
+    background-color: #527f4c;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+nav a:hover {
+    background-color: #80b879;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+
+nav a:active {
+    transform: scale(0.95);
+}
+
+.home {
+    text-align: center;
+    padding: 30px;
+    animation: fadeIn 1s ease-in;
+}
+
+.content-boxes {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    width: 25%;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+.text-area {
+    padding: 30px;
+    text-align: center;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #68a260, #80b879);
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Call-to-action button */
+.cta-btn {
+    background-color: white;
+    color: #527f4c;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.1);
+} 
+
+.box img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.featured {
+    text-align: center;
+    padding: 40px;
+}
+
+video {
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #527f4c;
+    color: white;
+    border-radius: 0 0 15px 15px;
+} 
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #68a260, #80b879);
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Call-to-action button */
+.cta-btn {
+    background-color: white;
+    color: #527f4c;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.1);
+}
+
+.hero-img {
+    width: 350px;          
+    display: block;       
+    margin: 30px auto;    
+    border-radius: 20px;   
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.about-hero {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #68a260, #80b879);
+    color: white;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+    gap: 30px;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-image img {
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+
+.art-card {
+    width: 300px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+
+.art-card img {
+    width: 100%;
+    display: block;
+}
+
+
+.art-info {
+    padding: 15px;
+    text-align: center;
+}
+
+
+.art-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+}
